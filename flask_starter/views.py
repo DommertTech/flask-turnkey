@@ -19,8 +19,6 @@ def private_timeline():
     return 'PRIVATE!'
 
 
-
-
 # Login Page
 @app.route('/login/')
 def login():
