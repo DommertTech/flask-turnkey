@@ -1,0 +1,30 @@
+{% extends config.THEME_FOLDER+'onecol.html' %}
+
+{% block rum_nav %}
+   {% include config.TEMPLATE_DEFAULTS['nav'] %}
+{% endblock %}
+
+{% block rum_content %}
+
+  <div class="row" id="flash_message">
+   {% with flash_messages = get_flashed_messages() %}
+    {% if flash_messages %}
+    <div data-alert class='alert-box radius success medium-8 columns medium-centered'>
+        <ul class="no-bullet">
+        {% for flash_message in flash_messages %}
+        <li>{{ flash_message }}</li>
+        {% endfor %}
+        </ul>
+        <a href="#" class="close">&times;</a>
+    </div>
+  </div>
+    {% endif %}
+{% endwith %}
+
+ {% block note_content %} {% endblock %}
+{% block content %} {% endblock %}
+{% endblock %}
+
+{% block rum_footer %}
+   {% include config.TEMPLATE_DEFAULTS['footer'] %}
+{% endblock %}
