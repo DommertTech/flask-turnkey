@@ -1,0 +1,12 @@
+{# Flask-Rum [Version 0.1.2]
+  Main Template #}
+
+{% extends 'rum/core/base.html' %}
+
+{% block body %}
+    <!-- Flask-Rum -->
+    <header> {% block header %} {% endblock %} </header>
+    <section id="middle"> {% block middle %} {% endblock %} </section>
+    <footer> {% block footer %} {% endblock %} </footer>
+        <script> $(document).foundation(); </script>
+{% endblock %}

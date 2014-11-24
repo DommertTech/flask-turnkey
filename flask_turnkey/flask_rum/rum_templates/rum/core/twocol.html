@@ -1,0 +1,35 @@
+{# Flask-Rum [Version 0.1.2]
+  Two Column Template  #}
+
+{% extends 'rum/core/main.html' %}
+
+{% block header %}
+<div class="row" id="rum_header">
+    {% block rum_header %}
+        {% block rum_nav %}{% endblock %}
+    {% endblock rum_header %}
+</div>
+{% endblock header %}
+
+{% block middle %}
+<div class="row" id="middle">
+{% block rum_middle %}
+  <div id="rum_middle">
+    <div class="medium-4 columns panel" style="float:{{ float }}" id="rum_sidebar">
+        {% block rum_sidebar %}{% endblock %}
+    </div>
+    <div class="medium-8 columns panel" id="rum_content">
+        {% block rum_content %}{% endblock %}
+    </div>
+  </div>
+{% endblock rum_middle %}
+</div>
+{% endblock middle %}
+
+{% block footer %}
+<div class="row" id="footer">
+   <div class="medium-12 columns" id="rum_footer"> {% block rum_footer %}{% endblock %} </div>
+</div>
+{% endblock footer %}
+
+

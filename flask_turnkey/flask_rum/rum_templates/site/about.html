@@ -1,0 +1,19 @@
+{# Flask-Rum [Version 0.1.2] #}
+
+{% extends config.THEME_FOLDER+'onecol.html' %}
+
+{% block rum_nav %}
+   {% include config.TEMPLATE_DEFAULTS['nav'] %}
+{% endblock %}
+
+{% block rum_content %}
+    <div class="panel">
+      <h3>About</h3>
+    <P > This is the about page. I think this is the place you tell about yourself. Just guessing though.  </P>
+    <p>boom goes the dynomite!</p>
+    </div>
+{% endblock %}
+
+{% block rum_footer %}
+   {% include config.TEMPLATE_DEFAULTS['footer'] %}
+{% endblock %}

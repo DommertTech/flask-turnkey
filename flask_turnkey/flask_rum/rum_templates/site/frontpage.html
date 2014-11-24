@@ -1,0 +1,15 @@
+{# Flask-Rum [Version 0.1.2] #}
+
+{% extends config.THEME_FOLDER+'frontpage.html' %}
+
+{% block rum_nav %}
+   {% include config.TEMPLATE_DEFAULTS['nav'] %}
+{% endblock %}
+
+{% block rum_content %}
+ {% include 'site/frontpage_content.html' %}
+{% endblock %}
+
+{% block rum_footer %}
+   {% include config.TEMPLATE_DEFAULTS['footer'] %}
+{% endblock %}
