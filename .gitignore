@@ -2,6 +2,7 @@
 flask_starter/flask_rum/
 flask_starter/flask_turboduck/
 workspace.xml
+.*
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
